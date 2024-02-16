@@ -7,9 +7,8 @@ export const userRouter = router({
     //const user = await ctx.prisma.user.create({
     //
     //});
-    return ;
-    
-  })
+    return;
+  }),
   currentUser: protectedProcedure.query(async ({ ctx }) => {
     return ctx.user;
   }),
